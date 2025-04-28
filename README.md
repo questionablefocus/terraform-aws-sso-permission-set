@@ -9,7 +9,7 @@ A basic cosmetic wrapper around the `aws_sso_permission_set` and related Terrafo
 
 ## Examples
 
-### Basic configuration
+### Basic configuration
 
 ```hcl
 locals {
@@ -17,8 +17,8 @@ locals {
 }
 
 module "read_only_permission_set" {
-  source  = "./modules/sso_permission_set"
-  version = "1.0.0"
+  source  = "questionablefocus/sso-permission-set/aws"
+  version = "1.0.1"
 
   name         = "ReadOnlyAccess"
   instance_arn = local.sso_instance_arn
@@ -37,8 +37,8 @@ locals {
 }
 
 module "read_only_permission_set" {
-  source  = "./modules/sso_permission_set"
-  version = "1.0.0"
+  source  = "questionablefocus/sso-permission-set/aws"
+  version = "1.0.1"
 
   name         = "ReadOnlyAccess"
   instance_arn = local.sso_instance_arn
